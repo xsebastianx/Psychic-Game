@@ -2,7 +2,7 @@ let letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", 
 
 let wins = 0;
 let losses = 0;
-let guessesLeft = 3;
+let guessesLeft = 5;
 let yourGuesses = [];
 
 let randomNumber = Math.floor(Math.random() * letters.length);
@@ -17,7 +17,7 @@ document.onkeyup = function (event) {
 
     if (userGuess === computerGuess) {
         wins++;
-        guessesLeft = 3;
+        guessesLeft = 5;
         yourGuesses = [];
     }
 
@@ -26,7 +26,7 @@ document.onkeyup = function (event) {
 
         if (guessesLeft === 1) {
             losses++;
-            guessesLeft = 3;
+            guessesLeft = 5;
             yourGuesses = [];
         }
         else {  
