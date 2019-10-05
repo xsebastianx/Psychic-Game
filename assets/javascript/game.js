@@ -19,6 +19,7 @@ document.onkeyup = function (event) {
         wins++;
         guessesLeft = 5;
         yourGuesses = [];
+        alert("Wow, look at you! You got it...now do it again!")
     }
 
 
@@ -28,9 +29,11 @@ document.onkeyup = function (event) {
             losses++;
             guessesLeft = 5;
             yourGuesses = [];
+           alert("I predicted you would lose")
         }
         else {  
             guessesLeft--;
+            alert("Haha, try again")
         }
     }
 
